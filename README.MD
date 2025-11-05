@@ -28,16 +28,19 @@ Data Handling	Pandas, NumPy
 AI Integration	DeepSeek LLM (OpenAI-compatible)
 Serialization	Joblib
 Environment Management	python-dotenv
-🗂️ Project Structure
 customer_churn_xai/
 │
-├── app.py                # Streamlit application
-├── churn_model.pkl       # Trained XGBoost model
-├── encoder.pkl           # Saved LabelEncoders for categorical features
-├── telco_churn.csv       # Input dataset
-├── model_training.ipynb  # Notebook for training & SHAP exploration
-├── requirements.txt      # Python dependencies
-└── .env                  # DeepSeek API key (not committed)
+├── app.py                # 🎯 Main Streamlit application
+│
+├── churn_model.pkl       # 💾 Trained XGBoost model
+├── encoder.pkl           # 🧩 Saved LabelEncoders for categorical features
+│
+├── telco_churn.csv       # 📊 Input telecom dataset
+├── model_training.ipynb  # 📘 Notebook for model training & SHAP exploration
+│
+├── requirements.txt      # 📦 Python dependencies
+└── .env                  # 🔐 Contains DeepSeek API key (not committed)
+
 
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
