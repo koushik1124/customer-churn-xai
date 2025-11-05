@@ -7,17 +7,17 @@ It integrates a trained XGBoost model for predictions, SHAP for explainability, 
 
 🧠 Key Features
 
-✅ Customer Churn Prediction — Predicts whether a customer is likely to churn based on telecom usage data.
+Customer Churn Prediction — Predicts whether a customer is likely to churn based on telecom usage data.
 
-🤖 AI-Powered Explanations — Uses DeepSeek’s LLM API to generate clear, business-friendly explanations for every prediction.
+AI-Powered Explanations — Uses DeepSeek’s LLM API to generate clear, business-friendly explanations.
 
-🧩 Interactive Streamlit UI — Real-time predictions through an intuitive dashboard.
+Interactive Streamlit UI — Real-time predictions through an intuitive dashboard.
 
-📈 Explainable AI (SHAP) — Highlights which factors most influence churn risk.
+Explainable AI (SHAP) — Highlights which factors most influence churn risk.
 
-🔁 Reusable ML Pipeline — Includes model training, preprocessing, and serialization with joblib.
+Reusable ML Pipeline — Includes model training, preprocessing, and serialization with joblib.
 
-🔐 Secure API Integration — Loads your DeepSeek API key safely from a .env file.
+Secure API Integration — Loads your DeepSeek API key safely from a .env file.
 
 🧰 Tech Stack
 Layer	Technology
@@ -28,27 +28,22 @@ Data Handling	Pandas, NumPy
 AI Integration	DeepSeek LLM (OpenAI-compatible)
 Serialization	Joblib
 Environment Management	python-dotenv
-
-
-
-
+🗂️ Project Structure
 customer_churn_xai/
 │
-
-├── app.py                # 🎯 Main Streamlit application
+├── app.py                # Main Streamlit application
 │
-
-├── churn_model.pkl       # 💾 Trained XGBoost model
-├── encoder.pkl           # 🧩 Saved LabelEncoders for categorical features
+├── churn_model.pkl       # Trained XGBoost model
+├── encoder.pkl           # Saved LabelEncoders for categorical features
 │
-
-├── telco_churn.csv       # 📊 Input telecom dataset
-├── model_training.ipynb  # 📘 Notebook for model training & SHAP exploration
+├── telco_churn.csv       # Input telecom dataset
+├── model_training.ipynb  # Notebook for training & SHAP exploration
 │
+├── requirements.txt      # Python dependencies
+└── .env                  # DeepSeek API key (not committed)
 
-├── requirements.txt      # 📦 Python dependencies
-└── .env                  # 🔐 Contains DeepSeek API key (not committed)
 
+(This section uses plain code-block text — no emojis or tabs — so spacing stays perfect after commit.)
 
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
@@ -68,9 +63,6 @@ pip install -r requirements.txt
 Create a .env file in the root folder:
 
 DEEPSEEK_API_KEY=sk-your_api_key_here
-
-
-(Do not include quotes or spaces)
 
 5️⃣ Run the Streamlit app
 streamlit run app.py
@@ -100,10 +92,10 @@ DeepSeek LLM generates a natural-language summary and actionable recommendations
 
 Prediction: Customer is likely to churn (Probability: 0.81)
 
-🤖 AI Explanation:
+AI Explanation:
 The customer shows a high churn risk due to short tenure and high monthly charges.
 Automatic payment and fiber-optic connection slightly reduce risk.
-Offering a loyalty reward or a contract upgrade may help retain this customer.
+Offering a loyalty reward or contract upgrade may help retain this customer.
 
 🧾 Environment Variables
 Variable	Description
@@ -131,17 +123,17 @@ Never commit your .env file or API keys.
 
 Add .env to .gitignore to keep secrets private.
 
-For Streamlit Cloud or deployment, set API keys as environment variables in your hosting settings.
+For Streamlit Cloud or deployment, set the key as an environment variable.
 
 🌟 Future Enhancements
 
-📄 PDF export of prediction + AI explanation
+PDF export of prediction + AI explanation
 
-📊 Batch churn prediction via CSV upload
+Batch churn prediction via CSV upload
 
-🧠 Offline LLM integration (local inference)
+Offline LLM integration (local inference)
 
-🌐 Multi-language AI summaries
+Multi-language AI summaries
 
 🤝 Contributing
 
