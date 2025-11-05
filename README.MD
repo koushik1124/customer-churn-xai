@@ -47,7 +47,6 @@ It integrates:
 ## 🗂️ Project Structure
 
 customer_churn_xai/
-│
 ├── app.py # Main Streamlit application
 ├── churn_model.pkl # Trained XGBoost model
 ├── encoder.pkl # Saved LabelEncoders for categorical features
@@ -55,8 +54,6 @@ customer_churn_xai/
 ├── model_training.ipynb # Notebook for training & SHAP exploration
 ├── requirements.txt # Python dependencies
 └── .env # DeepSeek API key (not committed)
-
-text
 
 ---
 
