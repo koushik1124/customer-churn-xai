@@ -1,0 +1,15 @@
+# Ignore Python environment and cache files
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore dataset and model files (optional, if large)
+*.pkl
+*.csv
+
+# Ignore environment variable file
+.env
+
+# VS Code and Streamlit cache
+.vscode/
+.streamlit/
